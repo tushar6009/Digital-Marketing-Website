@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Satoshi-Light';
+    color: black;
+    letter-spacing: 1px;
+}
+:root{
+    --bs-link-hover-color:white;
+}
+img{
+    width: 100%;
+}
+.btn-grey{
+    background-color: #767676;
+}
+ol,ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a{
+    transition: 0.5s;
+}
+.heebo{
+    font-family: 'Heebo';
+}
+.baloo{
+    font-family: 'Baloo Tammudu 2';
+}
+.dosis{
+    font-family: 'Dosis';
+}
+.intro .intro-img img{
+    animation: up-down 2s linear infinite alternate;
+}
+@keyframes up-down{
+    0%{
+        transform:translateY(2%);
+    }
+    100%{
+        transform:translateY(-3%);
+    }
+}
+.creativity{
+    position: relative;
+}
+.creativity p::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: calc(100% - 53%);
+}
+.creativity-content .card, .client .card{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.388);
+    transition: 0.5s;
+}
+.creativity-content .card:hover, .client .card:hover{
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.388);
+}
+.client{
+    position: relative;
+}
+.clientm p::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: black;
+    top:160px;
+    left: calc(100% - 52%);
+}
+.intro .intro-content button{
+    transition: 0.5s;
+}
+.intro .intro-content button :hover{
+    background-color: aliceblue;
+}
+:root{
+    --bs-btn-hover-bg:white;
+    --bs-link-hover-color:black;
+}
+.btn:hover{
+    background-color: var(--bs-btn-hover-bg);
+}
